@@ -105,6 +105,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="hIG-1P-F4w" kind="show" id="Prf-qL-BZv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -118,6 +121,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2d8-2G-1Si" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-903" y="465"/>
+        </scene>
+        <!--Finish View Controller-->
+        <scene sceneID="aVa-qU-0t2">
+            <objects>
+                <viewController id="hIG-1P-F4w" customClass="FinishViewController" customModule="Mascarad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T3d-Vf-3N7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MKg-Ll-DWf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0rk-Jm-Old"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDZ-Fb-FBV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="481"/>
         </scene>
         <!--Mascarad-->
         <scene sceneID="8wT-fN-2tO">

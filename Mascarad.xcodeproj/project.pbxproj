@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23A6949E274A540E0011BFCE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6949D274A540E0011BFCE /* WelcomeViewController.swift */; };
+		23A694A2274AA4DA0011BFCE /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A694A1274AA4DA0011BFCE /* FinishViewController.swift */; };
 		23D20C182740490200927034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D20C172740490200927034 /* AppDelegate.swift */; };
 		23D20C1A2740490200927034 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D20C192740490200927034 /* SceneDelegate.swift */; };
 		23D20C1F2740490200927034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D20C1D2740490200927034 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		23A6949D274A540E0011BFCE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		23A694A1274AA4DA0011BFCE /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		23D20C142740490200927034 /* Mascarad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mascarad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D20C172740490200927034 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23D20C192740490200927034 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +56,6 @@
 		23D20C0B2740490200927034 = {
 			isa = PBXGroup;
 			children = (
-				23E29E79274451330002CD7E /* MaskViewController.swift */,
 				23D20C162740490200927034 /* Mascarad */,
 				23D20C152740490200927034 /* Products */,
 			);
@@ -106,6 +107,8 @@
 				23E29E77274447ED0002CD7E /* TapBarViewController.swift */,
 				23D20C38274055BF00927034 /* MembersTableViewController.swift */,
 				23D20C3A274055E100927034 /* FullTableViewController.swift */,
+				23E29E79274451330002CD7E /* MaskViewController.swift */,
+				23A694A1274AA4DA0011BFCE /* FinishViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				23D20C182740490200927034 /* AppDelegate.swift in Sources */,
 				23E29E7A274451330002CD7E /* MaskViewController.swift in Sources */,
 				23D20C1A2740490200927034 /* SceneDelegate.swift in Sources */,
+				23A694A2274AA4DA0011BFCE /* FinishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

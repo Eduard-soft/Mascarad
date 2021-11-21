@@ -9,23 +9,25 @@ import UIKit
 
 class FullTableViewController: UITableViewController {
     
-    var members: [Member]!
+    var members = Member.getMemberList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // tableView.rowHeight = 80
+        tableView.rowHeight = 80
+        print(members)
+    }
 
     // MARK: - Table view data source
 
 
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         members.count
     }
 
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "fullCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let member = members[indexPath.section]
+        let member = members[indexPath.row]
         
         content.text = member.name
         content.secondaryText = member.email
@@ -33,15 +35,6 @@ class FullTableViewController: UITableViewController {
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
         
-//        switch indexPath.row {
-//        case 0:
-//            content.text = member.phoneNumber
-//            content.image = UIImage(systemName: Contacts.phone.rawValue)
-//        default:
-            //content.text = member.email
-           //content.image = UIImage(systemName: Contacts.email.rawValue)
-
-
         return cell
     }
 
@@ -51,13 +44,11 @@ class FullTableViewController: UITableViewController {
 //        tableView.deselectRow(at: indexPath, animated: true)
 //    }
         
-//        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//            if let indexPath = tableView.indexPathForSelectedRow {
-//                guard let detailVC = segue.destination as? DeveloperInfoViewController else { return }
-//                detailVC.developer = developers[indexPath.row]
-//        }
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                guard let fullVC = segue.destination as? MaskViewController else { return }
+                fullVC.member = members[indexPath.row]
+        }
         
-        
-}
-    
+        }
 }

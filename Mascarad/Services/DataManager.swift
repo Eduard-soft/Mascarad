@@ -49,9 +49,9 @@ class DataManager {
         "Brown"
     ]
     
-    var contact: String {
-        "\(phoneNumberMembers) \(emailMenbers)"
-    }
+//    var contact: String {
+//        "\(phoneNumberMembers) \(emailMenbers)"
+//    }
     
     private init() {}
 }

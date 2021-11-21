@@ -5,9 +5,11 @@
 //  Created by Эдуард on 13.11.2021.
 //
 
+import Foundation
+
 struct Member {
     
-    let member = DataManager.shared
+    //let member = DataManager.shared
     
     let name: String
     let phoneNumber: String
@@ -35,16 +37,15 @@ extension Member {
             pawsImages.count
         )
         
-        for index in 0...iterationCount {
+        for index in 0..<iterationCount {
             let member = Member(
                 name: names[index],
                 phoneNumber: phoneNumbers[index],
                 email: emails[index],
                 image: images[index],
-                pawsImage: pawsImages[index]
-            )
-        
-            members.append(member)
+                pawsImage: pawsImages[index])
+//            members.append(member)
+                members.append(member)
         }
         
         return members

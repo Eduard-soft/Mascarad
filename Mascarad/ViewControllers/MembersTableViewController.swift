@@ -11,20 +11,20 @@ class MembersTableViewController: UITableViewController {
     
     //var members = Member.getMemberList()
     
-    var members: [Member] = []
+    var members = Member.getMemberList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tableView.rowHeight = 80
+        tableView.rowHeight = 80
         print(members)
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-       
-        return 5
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//
+//        return 5
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         members.count
@@ -46,8 +46,8 @@ class MembersTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
-            guard let maskVS = segue.destination as? FinishViewController else { return }
-            maskVS.member = members[indexPath.row]
+            guard let memberVC = segue.destination as? FinishViewController else { return }
+            memberVC.member = members[indexPath.row]
         }
     }
 }

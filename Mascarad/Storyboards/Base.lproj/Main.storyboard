@@ -11,7 +11,7 @@
         <!--Выбери Участника-->
         <scene sceneID="6w1-Rw-I7p">
             <objects>
-                <tableViewController restorationIdentifier="FullTableViewController" storyboardIdentifier="FullTableViewController" id="Fqq-8M-S5j" customClass="FullTableViewController" customModule="FullTableViewController" sceneMemberID="viewController">
+                <tableViewController id="Fqq-8M-S5j" customClass="FullTableViewController" customModule="Mascarad" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="9H6-Aa-iQN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,6 +41,9 @@
                                     </subviews>
                                     <color key="backgroundColor" red="0.8936735987663269" green="0.26005932688713074" blue="0.056012876331806183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="KBA-dW-6sY"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -76,7 +79,7 @@
         <!--Members-->
         <scene sceneID="GIl-oG-nmL">
             <objects>
-                <tableViewController storyboardIdentifier="MembersTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hve-jV-Rii" customClass="MembersTableViewController" customModule="MembersTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MembersTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hve-jV-Rii" customClass="MembersTableViewController" customModule="Mascarad" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="hLu-EW-OzZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,33 +163,37 @@
             <objects>
                 <viewController restorationIdentifier="MaskViewController" storyboardIdentifier="MaskViewController" id="BYZ-38-t0r" customClass="MaskViewController" customModule="Mascarad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Putin" translatesAutoresizingMaskIntoConstraints="NO" id="nd3-n4-qca">
-                                <rect key="frame" x="20" y="387" width="374" height="475"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tramp" translatesAutoresizingMaskIntoConstraints="NO" id="hT6-VM-RK7">
-                                <rect key="frame" x="20" y="44" width="374" height="343"/>
+                                <rect key="frame" x="20" y="105" width="374" height="343"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="343" id="8Xe-ng-Rpb"/>
                                 </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Putin" translatesAutoresizingMaskIntoConstraints="NO" id="nd3-n4-qca">
+                                <rect key="frame" x="20" y="456" width="374" height="475"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hT6-VM-RK7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5Mg-B1-iyN"/>
-                            <constraint firstItem="nd3-n4-qca" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7rA-Tz-D6L"/>
-                            <constraint firstItem="nd3-n4-qca" firstAttribute="top" secondItem="hT6-VM-RK7" secondAttribute="bottom" id="8cw-pI-clO"/>
+                            <constraint firstItem="hT6-VM-RK7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="5Mg-B1-iyN"/>
+                            <constraint firstItem="nd3-n4-qca" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="123" id="7rA-Tz-D6L"/>
+                            <constraint firstItem="nd3-n4-qca" firstAttribute="top" secondItem="hT6-VM-RK7" secondAttribute="bottom" constant="8" id="8cw-pI-clO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hT6-VM-RK7" secondAttribute="trailing" constant="20" id="BQa-WW-emo"/>
                             <constraint firstItem="nd3-n4-qca" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CtQ-i5-fE2"/>
-                            <constraint firstItem="nd3-n4-qca" firstAttribute="top" secondItem="hT6-VM-RK7" secondAttribute="bottom" id="DFk-Nn-Uta"/>
+                            <constraint firstItem="nd3-n4-qca" firstAttribute="top" secondItem="hT6-VM-RK7" secondAttribute="bottom" constant="8" id="DFk-Nn-Uta"/>
                             <constraint firstItem="hT6-VM-RK7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iO2-1d-qyJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nd3-n4-qca" secondAttribute="trailing" constant="20" id="r0I-lT-htb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dFV-zS-DvO"/>
+                    <connections>
+                        <outlet property="memberImage" destination="hT6-VM-RK7" id="zUN-DH-rKF"/>
+                        <outlet property="pawsImages" destination="nd3-n4-qca" id="ngs-jl-SWt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

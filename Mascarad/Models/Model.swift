@@ -9,8 +9,6 @@ import Foundation
 
 struct Member {
     
-    //let member = DataManager.shared
-    
     let name: String
     let phoneNumber: String
     let email: String
@@ -43,8 +41,8 @@ extension Member {
                 phoneNumber: phoneNumbers[index],
                 email: emails[index],
                 image: images[index],
-                pawsImage: pawsImages[index])
-//            members.append(member)
+                pawsImage: pawsImages[index]
+                )
                 members.append(member)
         }
         

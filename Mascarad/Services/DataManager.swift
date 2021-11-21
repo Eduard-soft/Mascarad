@@ -26,27 +26,27 @@ class DataManager {
     ]
     
     let emailMenbers = [
-        "koliz@email.ru",
-        "apple@email.ru",
-        "candame@email.ru",
-        "editer@email.ru",
+        "putin@email.ru",
+        "tramp@email.ru",
+        "merkel@email.ru",
+        "obama@email.ru",
         "bellisimo@email.ru"
     ]
     
     let imageMembers = [
-        "Smith",
-        "Johnson",
-        "Williams",
-        "Jones",
-        "Brown"
+        "putin",
+        "tramp",
+        "merkel",
+        "obama",
+        "tereshcova"
     ]
     
     let pawsRandomImages = [
-        "Smith",
-        "Johnson",
-        "Williams",
-        "Jones",
-        "Brown"
+        "paws1",
+        "paws2",
+        "paws3",
+        "paws4",
+        "paws2"
     ]
     
 //    var contact: String {

@@ -35,8 +35,8 @@ class MembersTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "memberCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         let member = members[indexPath.row]
-        
         content.text = member.name
+        content.secondaryText = member.phoneNumber
         cell.contentConfiguration = content
         
         return cell

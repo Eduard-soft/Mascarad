@@ -7,25 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23A6949E274A540E0011BFCE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6949D274A540E0011BFCE /* WelcomeViewController.swift */; };
 		23D20C182740490200927034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D20C172740490200927034 /* AppDelegate.swift */; };
 		23D20C1A2740490200927034 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D20C192740490200927034 /* SceneDelegate.swift */; };
-		23D20C1C2740490200927034 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D20C1B2740490200927034 /* ViewController.swift */; };
 		23D20C1F2740490200927034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D20C1D2740490200927034 /* Main.storyboard */; };
 		23D20C222740490200927034 /* Mascarad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23D20C202740490200927034 /* Mascarad.xcdatamodeld */; };
 		23D20C242740490700927034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D20C232740490700927034 /* Assets.xcassets */; };
 		23D20C272740490700927034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D20C252740490700927034 /* LaunchScreen.storyboard */; };
+		23D20C2F274051C400927034 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D20C2E274051C400927034 /* Model.swift */; };
+		23D20C34274052F100927034 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D20C33274052F100927034 /* DataManager.swift */; };
+		23D20C39274055BF00927034 /* MembersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D20C38274055BF00927034 /* MembersTableViewController.swift */; };
+		23D20C3B274055E100927034 /* FullTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D20C3A274055E100927034 /* FullTableViewController.swift */; };
+		23E29E78274447ED0002CD7E /* TapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E29E77274447ED0002CD7E /* TapBarViewController.swift */; };
+		23E29E7A274451330002CD7E /* MaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E29E79274451330002CD7E /* MaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23A6949D274A540E0011BFCE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		23D20C142740490200927034 /* Mascarad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mascarad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D20C172740490200927034 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23D20C192740490200927034 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23D20C1B2740490200927034 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23D20C1E2740490200927034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23D20C212740490200927034 /* Mascarad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mascarad.xcdatamodel; sourceTree = "<group>"; };
 		23D20C232740490700927034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23D20C262740490700927034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23D20C282740490700927034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D20C2E274051C400927034 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		23D20C33274052F100927034 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		23D20C38274055BF00927034 /* MembersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersTableViewController.swift; sourceTree = "<group>"; };
+		23D20C3A274055E100927034 /* FullTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTableViewController.swift; sourceTree = "<group>"; };
+		23E29E77274447ED0002CD7E /* TapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarViewController.swift; sourceTree = "<group>"; };
+		23E29E79274451330002CD7E /* MaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +54,7 @@
 		23D20C0B2740490200927034 = {
 			isa = PBXGroup;
 			children = (
+				23E29E79274451330002CD7E /* MaskViewController.swift */,
 				23D20C162740490200927034 /* Mascarad */,
 				23D20C152740490200927034 /* Products */,
 			);
@@ -58,16 +71,69 @@
 		23D20C162740490200927034 /* Mascarad */ = {
 			isa = PBXGroup;
 			children = (
-				23D20C172740490200927034 /* AppDelegate.swift */,
-				23D20C192740490200927034 /* SceneDelegate.swift */,
-				23D20C1B2740490200927034 /* ViewController.swift */,
-				23D20C1D2740490200927034 /* Main.storyboard */,
-				23D20C232740490700927034 /* Assets.xcassets */,
-				23D20C252740490700927034 /* LaunchScreen.storyboard */,
-				23D20C282740490700927034 /* Info.plist */,
+				23D20C312740521300927034 /* Storyboards */,
+				23D20C322740523E00927034 /* ViewControllers */,
+				23D20C30274051CA00927034 /* Models */,
+				23D20C35274052FA00927034 /* Services */,
+				23D20C362740534100927034 /* Resources */,
+				23D20C372740538400927034 /* Configs */,
 				23D20C202740490200927034 /* Mascarad.xcdatamodeld */,
 			);
 			path = Mascarad;
+			sourceTree = "<group>";
+		};
+		23D20C30274051CA00927034 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23D20C2E274051C400927034 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23D20C312740521300927034 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				23D20C1D2740490200927034 /* Main.storyboard */,
+				23D20C252740490700927034 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		23D20C322740523E00927034 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				23A6949D274A540E0011BFCE /* WelcomeViewController.swift */,
+				23E29E77274447ED0002CD7E /* TapBarViewController.swift */,
+				23D20C38274055BF00927034 /* MembersTableViewController.swift */,
+				23D20C3A274055E100927034 /* FullTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		23D20C35274052FA00927034 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				23D20C33274052F100927034 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		23D20C362740534100927034 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				23D20C232740490700927034 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		23D20C372740538400927034 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				23D20C172740490200927034 /* AppDelegate.swift */,
+				23D20C192740490200927034 /* SceneDelegate.swift */,
+				23D20C282740490700927034 /* Info.plist */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +207,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23D20C1C2740490200927034 /* ViewController.swift in Sources */,
+				23D20C2F274051C400927034 /* Model.swift in Sources */,
+				23A6949E274A540E0011BFCE /* WelcomeViewController.swift in Sources */,
+				23D20C34274052F100927034 /* DataManager.swift in Sources */,
+				23D20C3B274055E100927034 /* FullTableViewController.swift in Sources */,
+				23D20C39274055BF00927034 /* MembersTableViewController.swift in Sources */,
 				23D20C222740490200927034 /* Mascarad.xcdatamodeld in Sources */,
+				23E29E78274447ED0002CD7E /* TapBarViewController.swift in Sources */,
 				23D20C182740490200927034 /* AppDelegate.swift in Sources */,
+				23E29E7A274451330002CD7E /* MaskViewController.swift in Sources */,
 				23D20C1A2740490200927034 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +367,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P529959SPU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Mascarad/Info.plist;
+				INFOPLIST_FILE = Mascarad/Configs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -310,7 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,7 +395,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P529959SPU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Mascarad/Info.plist;
+				INFOPLIST_FILE = Mascarad/Configs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -338,7 +410,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
